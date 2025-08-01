@@ -1,0 +1,143 @@
+@media screen and (max-width: 800px) {
+  body {
+    background-size: 100px;
+  }
+
+  .container {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  /*.anime-images img {
+    width: 80px;
+    margin: 5px;
+  }*/
+  .anime-images img {
+  width: 90%;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid white;
+  transition: transform 0.3s;
+}
+    
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  background-image: url('https://i.imgur.com/Oa1xwEr.png'); /* Flores */
+  background-repeat: repeat;
+  background-size: 80px;
+  color: white;
+  font-family: 'Comic Sans MS', cursive;
+  overflow-x: hidden;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid red;
+  border-radius: 20px;
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 25px red;
+}
+
+h1 {
+  color: red;
+  font-size: 2.5em;
+}
+
+button {
+  background: red;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: white;
+  color: red;
+  border: 1px solid red;
+}
+
+.anime-images img {
+  width: 120px;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid white;
+  transition: transform 0.3s;
+}
+
+.anime-images img:hover {
+  transform: scale(1.1);}
+
+
+
+  .heart-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.heart {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: pink;
+  transform: rotate(45deg);
+  animation: fall linear;
+  opacity: 0.8;
+}
+
+.heart::before,
+.heart::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: inherit;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -10px;
+  left: 0;
+}
+
+.heart::after {
+  top: 0;
+  left: -10px;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(45deg);
+    opacity: 0;
+  }
+}
