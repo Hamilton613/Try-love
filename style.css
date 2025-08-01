@@ -30,17 +30,17 @@
   transition: transform 0.3s;
 }
     
-}
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
-  background-image: url('https://i.imgur.com/Oa1xwEr.png'); /* Flores */
+  background-color: #000000;
+  background-image: none !important; /* ← elimina cualquier fondo roto */
   background-repeat: repeat;
   background-size: 80px;
   color: white;
   font-family: 'Comic Sans MS', cursive;
   overflow-x: hidden;
+}
 }
 
 .container {
